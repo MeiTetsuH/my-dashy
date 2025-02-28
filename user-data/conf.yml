@@ -1,47 +1,143 @@
----
-# Page meta info, like heading, footer text and nav links
 pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
+  title: haoHMZ
+  description: 用导航 就用haoHMZ
   navLinks:
-  - title: GitHub
-    path: https://github.com/Lissy93/dashy
-  - title: Documentation
-    path: https://dashy.to/docs
-
-# Optional app settings and configuration
+    - title: Mingzhe
+      path: https://mingzhe.uk/
+      target: newtab
+  logo: https://img.icons8.com/?size=100&id=53387&format=png&color=000000
 appConfig:
-  theme: colorful
-
-# Main content - An array of sections, each containing an array of items
+  auth:
+    users:
+      - user: akira
+        hash: CB784F7EA1A38CB38F21073FFDFD5627A8BDF8113D7783AF188570950B1CBC00
+        type: admin
+      - user: guest
+        hash: CB784F7EA1A38CB38F21073FFDFD5627A8BDF8113D7783AF188570950B1CBC00
+        type: normal
+    enableGuestAccess: true
+    enableOidc: false
+    oidc: {}
+    enableHeaderAuth: false
+    headerAuth:
+      userHeader: REMOTE_USER
+      proxyWhitelist: []
+    enableKeycloak: false
+  theme: default
+  layout: auto
+  iconSize: large
+  startingView: default
+  defaultOpeningMethod: newtab
+  statusCheck: true
+  statusCheckInterval: 0
+  faviconApi: allesedv
+  routingMode: history
+  enableMultiTasking: false
+  widgetsAlwaysUseProxy: false
+  webSearch:
+    disableWebSearch: true
+    searchEngine: duckduckgo
+    openingMethod: newtab
+    searchBangs: {}
+  enableFontAwesome: true
+  enableMaterialDesignIcons: false
+  hideComponents:
+    hideHeading: false
+    hideNav: false
+    hideSearch: true
+    hideSettings: false
+    hideFooter: true
+  showSplashScreen: false
+  preventWriteToDisk: false
+  preventLocalSave: false
+  disableConfiguration: false
+  disableConfigurationForNonAdmin: true
+  allowConfigEdit: true
+  enableServiceWorker: false
+  disableContextMenu: false
+  disableUpdateChecks: false
+  disableSmartSort: false
+  enableErrorReporting: false
+  language: cn
 sections:
-- name: Getting Started
-  icon: fas fa-rocket
-  items:
-  - title: Dashy Live
-    description: Development a project management links for Dashy
-    icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-    url: https://live.dashy.to/
-    target: newtab
-  - title: GitHub
-    description: Source Code, Issues and Pull Requests
-    url: https://github.com/lissy93/dashy
-    icon: favicon
-  - title: Docs
-    description: Configuring & Usage Documentation
-    provider: Dashy.to
-    icon: far fa-book
-    url: https://dashy.to/docs
-  - title: Showcase
-    description: See how others are using Dashy
-    url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-    icon: far fa-grin-hearts
-  - title: Config Guide
-    description: See full list of configuration options
-    url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-    icon: fas fa-wrench
-  - title: Support
-    description: Get help with Dashy, raise a bug, or get in contact
-    url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-    icon: far fa-hands-helping
-  
+  - name: No registration required
+    displayData:
+      sortBy: default
+      rows: 3
+      cols: 4
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_0
+        title: Lobe.HMZ
+        description: '无需登录 与Ai对话 '
+        icon: >-
+          https://img.icons8.com/?size=100&id=UY97iRwDtZwb&format=png&color=000000
+        url: https://lobe.mingzhe.uk
+        id: 0_2425_lobehmz
+      - &ref_1
+        title: Box.HMZ
+        description: 无需登录 传输文件
+        icon: >-
+          https://img.icons8.com/?size=100&id=3eDNH6BWdDjv&format=png&color=000000
+        url: https://box.mingzhe.uk/
+        id: 1_2425_boxhmz
+      - &ref_2
+        title: Draw.HMZ
+        description: 无需登录 在线画板协作
+        icon: >-
+          https://img.icons8.com/?size=100&id=8rPYYnlOSQJm&format=png&color=000000
+        url: https://drwa.mingzhe.uk/
+        id: 2_2425_drawhmz
+      - &ref_3
+        title: Pdf.HMZ
+        description: 无需登录 编辑PDF
+        icon: >-
+          https://img.icons8.com/?size=100&id=x1VwrcUzXIPb&format=png&color=000000
+        url: https://pdf.mingzhe.uk/
+        id: 3_2425_pdfhmz
+      - &ref_4
+        title: Tools.HMZ
+        description: 无需登录 常用IT工具
+        icon: https://img.icons8.com/?size=100&id=11151&format=png&color=000000
+        url: https://tools.mingzhe.uk
+        id: 4_2425_toolshmz
+    filteredItems:
+      - *ref_0
+      - *ref_1
+      - *ref_2
+      - *ref_3
+      - *ref_4
+  - name: Registration required
+    displayData:
+      sortBy: default
+      rows: 2
+      cols: 2
+      collapsed: true
+      hideForGuests: true
+    items:
+      - &ref_5
+        title: Chat.HMZ
+        description: Ai
+        icon: >-
+          https://img.icons8.com/?size=100&id=YZ7rIIQ17EGq&format=png&color=000000
+        url: https://ai.mingzhe.uk/
+        target: newtab
+        id: 0_2172_chathmz
+      - &ref_6
+        title: Me.HMZ
+        description: 个人博客
+        icon: https://img.icons8.com/?size=100&id=26072&format=png&color=000000
+        url: https://me.mingzhe.uk
+        id: 1_2172_mehmz
+      - &ref_7
+        title: Nas.HMZ
+        description: '群晖Nas '
+        icon: https://img.icons8.com/?size=100&id=69522&format=png&color=000000
+        url: https://nas.mingzhe.uk/
+        target: newtab
+        id: 2_2172_nashmz
+    filteredItems:
+      - *ref_5
+      - *ref_6
+      - *ref_7
