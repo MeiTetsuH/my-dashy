@@ -71,7 +71,11 @@
     "vue-template-compiler": "^2.7.0"
   },
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
+  },
+  "resolutions": {
+    "@achrinza/node-ipc": "^10.0.0",
+    "node-ipc": "^11.0.0"
   },
   "eslintConfig": {
     "root": true,
